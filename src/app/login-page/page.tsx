@@ -1,11 +1,10 @@
 export default function Home() {
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div>
-            <h1>Login Page</h1>
-        </div>
-      </main>
-    );
-  }
-  
-  
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div>
+        <h1>I love Harold</h1>
+      </div>
+    </main>
+  );
+}
+
