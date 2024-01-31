@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "@/Components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Talenta",
-  description: "",
+  description: "Dashboard Teachers",
 };
 
 export default function RootLayout({
