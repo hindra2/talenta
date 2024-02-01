@@ -21,7 +21,7 @@ export default function RootLayout({
         </div>
 
         {/* top left sidebar */}
-        <div className="absolute left-0 top-0">
+        <div className="absolute h-128 w-128 left-0 top-0">
           <Sidebar /> {}
         </div>
 
