@@ -25,6 +25,11 @@ const config: Config = {
       colors: {
         background: "#FAFAFA",
         foreground: "#FFFFFF",
+        headingRed: "#ff5c5c",
+        subheadingRed: "ff6d6d",
+        headingBlack: "#3f3f3f",
+        subheadingBlack: "#6d6d6d",
+        captionBlack: "#909090",
       },
     },
   },
