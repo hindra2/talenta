@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="relative font-medium bg-background">
         {/* top right logo */}
-        <div className="absolute h-[225px] w-[225px] top-4 right-2 m-5">
+        <div className="absolute h-[225px] w-[225px] mt-8 right-2 m-5">
           <Logo /> {}
         </div>
         {/* top left sidebar */}
