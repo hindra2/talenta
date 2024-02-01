@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Sidebar = () => {
   return (
-    <div className="bg-foreground flex flex-col items-center w-[125px] h-dvh shadow-xl">
+    <div className="bg-foreground flex flex-col items-center w-[125px] h-dvh shadow-2xl">
       <button className="flex flex-col items-center mt-8">
         <Image src="/account.png" alt="account logo" width={70} height={70} />
         <span className="text-s font-medium">[Name]</span>

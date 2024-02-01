@@ -30,23 +30,23 @@ export default function Home() {
       <div className="flex w-full mt-[30px] ml-[250px]">
         {/* Profile Outline Buttons */}
         <div className="flex flex-col ml-[30px]">
-          <button className="mb-5 text-left text-xl text-subheadingBlack">
+          <button className="mb-6 text-xl text-headingRed border-l-2 border-headingRed">
             Personal Data
           </button>
-          <button className="mb-5 text-left text-xl text-subheadingBlack">
+          <button className="mb-6 text-left text-xl text-subheadingBlack ml-5">
             Academics
           </button>
-          <button className="mb-5 text-left text-xl text-subheadingBlack">
+          <button className="mb-6 text-left text-xl text-subheadingBlack ml-5">
             Non-Academics
           </button>
-          <button className="text-left text-xl text-subheadingBlack">
+          <button className="text-left text-xl text-subheadingBlack ml-5">
             Teacher's Notes
           </button>
         </div>
         <div className="flex-grow">
           <div className="flex justify-center">
             {/* Profile Container Section */}
-            <div className="flex w-[50%] h-dvh bg-white shadow-lg rounded-3xl ml-[-150px]">
+            <div className="flex w-[60%] h-dvh bg-white shadow-lg rounded-3xl ml-[-160px]">
               <div className="flex">
                 <div className="py-10 px-14 flex-1">
                   <div className="font-bold text-4xl text-headingBlack">
@@ -152,6 +152,23 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            {/* Administrator Section */}
+            <div className="ml-[30px]">
+              <span className="font-semibold text-xl text-headingBlack">
+                Administrator
+              </span>
+              <div className="flex items-center ml-2 h-[60px] w-[200px] bg-white shadow-xl rounded-xl px-2">
+                <Image
+                  src="/administratorPlaceholder.png"
+                  alt="Electronic"
+                  width={50}
+                  height={50}
+                />
+                <span className="ml-2 text-l font-semibold text-headingBlack">
+                  Homeroom Teacher
+                </span>
               </div>
             </div>
           </div>
