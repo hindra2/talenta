@@ -24,7 +24,7 @@ const config: Config = {
       },
       colors: {
         background: "#FAFAFA",
-        foreground: "#000000"
+        foreground: "#FFFFFF"
       },
     },
   },
