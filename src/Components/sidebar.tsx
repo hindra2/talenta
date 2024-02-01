@@ -12,7 +12,7 @@ const Sidebar = () => {
           height={90}
         />
         <div>
-          <h5>Name</h5>
+          <h5>[Name]</h5>
         </div>
       </button>
       
