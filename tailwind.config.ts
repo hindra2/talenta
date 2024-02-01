@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontWeight: {
         medium: "500",
-        semibold: "600",
+        semibold: "550",
         bold: "700",
       },
       fontSize: {
@@ -24,7 +24,7 @@ const config: Config = {
       },
       colors: {
         background: "#FAFAFA",
-        foreground: "#FFFFFF"
+        foreground: "#FFFFFF",
       },
     },
   },
