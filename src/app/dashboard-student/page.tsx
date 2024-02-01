@@ -1,16 +1,8 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <Link href="/dashboard-teachers">
-          <p>dashboard</p>
-        </Link>
-        <Link href="/login-page">
-          <p>login</p>
-        </Link>
-      </div>
+    <main className="flex min-h-screen flex-col items-center">
+      {/* Profile section */}
+      <div className="flex ml-[100px] w-[55%] h-dvh bg-black shadow-lg mt-[200px] rounded-3xl"></div>
     </main>
   );
 }
