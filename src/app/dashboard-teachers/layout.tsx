@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Header from "@/Components/Header";
+import Logo from "@/Components/Logo";
+import Sidebar from "@/Components/Sidebar"
 
 export const metadata: Metadata = {
   title: "Talenta",
@@ -13,8 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-medium">
-        <Header/> {}
+      <body className="relative font-medium">
+        {/* top right logo */}
+        <div className="absolute h-40 w-40 top-0 right-0 m-5">
+          <Logo/> {}
+        </div>
+
+        {/* top left sidebar */}
+        <div className="absolute left-0 top-0">
+          <Sidebar /> {}
+        </div>
+
         {children} {}
       </body>
     </html>
