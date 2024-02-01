@@ -8,10 +8,12 @@ const Sidebar = () => {
         <Image src="/account.png" alt="account logo" width={70} height={70} />
         <span className="text-s font-medium">[Name]</span>
       </button>
-      <button className="flex flex-col items-center mt-[25px]">
-        <Image src="/home.png" alt="home logo" width={40} height={40} />
-        <span className="text-s font-medium">Dashboard</span>
-      </button>
+      <div className="w-full bg-headingRed mt-[20px] h-[80px] flex justify-center items-center">
+        <button className="flex flex-col items-center justify-center">
+          <Image src="/home.png" alt="home logo" width={40} height={40} />
+          <span className="text-s font-medium text-white">Dashboard</span>
+        </button>
+      </div>
     </div>
   );
 };
