@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Logo from "@/Components/Logo";
-import Sidebar from "@/Components/Sidebar"
+import Logo from "@/Components/logo";
+import Sidebar from "@/Components/sidebar"
 
 export const metadata: Metadata = {
   title: "Talenta",
@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative font-medium">
+      <body className="relative font-medium bg-background">
         {/* top right logo */}
-        <div className="absolute h-40 w-40 top-0 right-0 m-5">
+        <div className="absolute h-64 w-64 top-0 right-0 m-5">
           <Logo/> {}
         </div>
 

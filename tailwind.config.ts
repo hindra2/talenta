@@ -22,6 +22,10 @@ const config: Config = {
         xxs: "0.62rem",
         l: "0.93rem",
       },
+      colors: {
+        background: "#FAFAFA",
+        foreground: "#000000"
+      },
     },
   },
   plugins: [],
