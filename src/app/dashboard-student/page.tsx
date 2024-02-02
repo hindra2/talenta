@@ -46,7 +46,7 @@ export default function Home() {
         <div className="flex-grow">
           <div className="flex justify-center">
             {/* Profile Container Section */}
-            <div className="flex w-[60%] h-dvh bg-white shadow-lg rounded-3xl ml-[-160px]">
+            <div className="flex w-[60%] h-dvh bg-white shadow-lg rounded-3xl ml-[-70px]">
               <div className="flex">
                 <div className="py-10 px-14 flex-1">
                   <div className="font-bold text-4xl text-headingBlack">
@@ -154,22 +154,54 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Administrator Section */}
+            {/* Administrator Section & Download as PDF button*/}
             <div className="ml-[30px]">
               <span className="font-semibold text-xl text-headingBlack">
                 Administrator
               </span>
-              <div className="flex items-center ml-2 h-[60px] w-[200px] bg-white shadow-xl rounded-xl px-2">
+              <div className="flex items-center h-[75px] w-[350px] bg-white shadow-md rounded-xl px-2">
                 <Image
                   src="/administratorPlaceholder.png"
                   alt="Electronic"
                   width={50}
                   height={50}
                 />
-                <span className="ml-2 text-l font-semibold text-headingBlack">
-                  Homeroom Teacher
-                </span>
+                <div className="ml-2">
+                  <p className="font-semibold text-xs text-subheadingBlack leading-none mt-[5px]">
+                    Homeroom Teacher
+                  </p>
+                  <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
+                    [Teacher's Name]
+                  </p>
+                  <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
+                    [School Name]
+                  </p>
+                </div>
               </div>
+              <div className="flex items-center h-[75px] w-[350px] bg-white shadow-md rounded-xl px-2 mt-[20px]">
+                <Image
+                  src="/administratorPlaceholder.png"
+                  alt="Electronic"
+                  width={50}
+                  height={50}
+                />
+                <div className="ml-2">
+                  <p className="font-semibold text-xs text-subheadingBlack leading-none mt-[5px]">
+                    School Admin
+                  </p>
+                  <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
+                    [Admin's Name]
+                  </p>
+                  <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
+                    [School Name]
+                  </p>
+                </div>
+              </div>
+              <button>
+                <div className="flex bg-headingRed w-[350px] h-[50px] mt-[375px] rounded-full items-center justify-center">
+                  <span className="text-xl">Download as PDF</span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
