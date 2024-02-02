@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* Main Header Section */}
-      <div className="self-start w-[200px] text-left ml-[150px] mt-8">
+      <div className="self-start text-left ml-[150px] mt-8">
         <span className="text-6xl font-semibold text-headingBlack">
           Dashboard
         </span>
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <hr className="self-start ml-[150px] border-t border-gray-200 my-[20px] w-[70%]" />
       <div className="self-start ml-[150px]">
-        <span className="font-bold text-4xl text-headingRed">Bob Evans</span>
+        <span className="font-bold text-4xl text-headingRed">Jane Doe</span>
         <span className="font-medium text-3xl text-headingRed">'s Profile</span>
       </div>
       {/* Main Content Container */}
@@ -62,19 +62,19 @@ export default function Home() {
                           Name
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : Evans, Bob
+                          : Chovey, Ann
                         </div>
                         <div className="font-medium text-l text-headingBlack">
                           Date of birth
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : 02/10/2005
+                          : 01/01/2005
                         </div>
                         <div className="font-medium text-l text-headingBlack">
                           Student ID
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : 09297042381
+                          : 098567432
                         </div>
                       </div>
                       <div className="font-semibold text-xl mt-5 text-headingBlack">
@@ -85,14 +85,14 @@ export default function Home() {
                           Citizenship
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : Citizen of China
+                          : Citizen of U.S.
                         </div>
 
                         <div className="font-medium text-l text-headingBlack">
                           Birthplace
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : Wuhan, Hubei
+                          : Chicago, IL
                         </div>
                       </div>
                     </div>
@@ -105,7 +105,7 @@ export default function Home() {
                           Gender Identity
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : Pansexual
+                          : Female
                         </div>
                         <div className="font-medium text-l text-headingBlack">
                           Sex
@@ -117,7 +117,7 @@ export default function Home() {
                           Pronouns
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : They/Them
+                          : She/Her
                         </div>
                       </div>
                       <div className="font-semibold text-xl mt-5 text-headingBlack">
@@ -128,28 +128,66 @@ export default function Home() {
                           Father
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : Mr. Hugh S. Evans
+                          : Mr. Hugh S. Chovey
                         </div>
                         <div className="font-medium text-l text-headingBlack">
                           Mother
                         </div>
                         <div className="font-medium text-l text-headingBlack">
-                          : Mrs. Olive Evans
+                          : Mrs. Olive Chovey
                         </div>
                       </div>
                     </div>
                   </div>
                   {/* Education Section */}
-                  <div className="flex mt-[40px]">
+                  <div className="flex-1 mt-[40px]">
                     <div className="font-bold text-4xl text-headingBlack">
                       Education
                     </div>
+                    <div className="flex-1 flex items-start mt-3">
+                      <div className="h-[120px] w-[4px] bg-headingRed rounded-lg ml-3 mr-3"></div>
+                      <div className="flex flex-col justify-start">
+                        <div className="flex items-start ml-[-20px] mt-[5px]">
+                          <div className="flex-shrink-0 mr-4">
+                            <div className="h-3 w-3 rounded-full bg-headingRed mt-1"></div>
+                          </div>
+                          <div className="flex flex-col justify-start ml-[-8px]">
+                            <span className="text-l font-semibold text-headingBlack mb-[-4px]">
+                              2021 - Present
+                            </span>
+                            <span className="text-xs text-subheadingBlack mb-[-2px]">
+                              Decelis Junior High School
+                            </span>
+                            <span className="text-xs text-captionBlack underline">
+                              See Class & Teacher History
+                            </span>
+                          </div>
+                        </div>
+                        <div className="flex items-start ml-[-20px] mt-[10px]">
+                          <div className="flex-shrink-0 mr-4">
+                            <div className="h-3 w-3 rounded-full bg-headingRed mt-1"></div>
+                          </div>
+                          <div className="flex flex-col justify-start ml-[-8px]">
+                            <span className="text-l font-semibold text-headingBlack mb-[-4px]">
+                              2018 - 2021
+                            </span>
+                            <span className="text-xs text-subheadingBlack mb-[-2px]">
+                              Fate Elementary School
+                            </span>
+                            <span className="text-xs text-captionBlack underline">
+                              See Class & Teacher History
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   {/* Education Progression Section */}
-                  <div className="flex mt-[40px]">
+                  <div className="flex-1 mt-[40px]">
                     <div className="font-bold text-4xl text-headingBlack">
                       Education Progression
                     </div>
+                    <span className="text-sm">No change in progession</span>
                   </div>
                 </div>
               </div>
@@ -159,7 +197,7 @@ export default function Home() {
               <span className="font-semibold text-xl text-headingBlack">
                 Administrator
               </span>
-              <div className="flex items-center h-[75px] w-[350px] bg-white shadow-md rounded-xl px-2">
+              <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2">
                 <Image
                   src="/administratorPlaceholder.png"
                   alt="Electronic"
@@ -178,7 +216,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center h-[75px] w-[350px] bg-white shadow-md rounded-xl px-2 mt-[20px]">
+              <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2 mt-[20px]">
                 <Image
                   src="/administratorPlaceholder.png"
                   alt="Electronic"
@@ -198,8 +236,8 @@ export default function Home() {
                 </div>
               </div>
               <button>
-                <div className="flex bg-headingRed w-[350px] h-[50px] mt-[375px] rounded-full items-center justify-center">
-                  <span className="text-xl">Download as PDF</span>
+                <div className="flex bg-headingRed w-[335px] h-[50px] mt-[375px] rounded-full items-center justify-center">
+                  <span className="text-xl text-white">Download as PDF</span>
                 </div>
               </button>
             </div>
