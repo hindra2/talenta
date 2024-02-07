@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center overflow-hidden h-screen">
       {/* Main Header Section */}
       <div className="self-start text-left ml-[150px] mt-8">
         <span className="text-6xl font-semibold text-headingBlack">
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="flex-grow">
           <div className="flex justify-center">
             {/* Profile Container Section */}
-            <div className="flex w-[60%] h-dvh bg-white shadow-lg rounded-3xl ml-[-70px]">
+            <div className="flex w-[60%] h-[80vh] bg-white shadow-lg rounded-3xl ml-[-70px] overflow-y-auto">
               <div className="flex">
                 <div className="py-10 px-14 flex-1">
                   <div className="font-bold text-4xl text-headingBlack">
@@ -188,6 +188,11 @@ export default function Home() {
                       Education Progression
                     </div>
                     <span className="text-sm">No change in progession</span>
+                  </div>
+                  <div className="flex-1 mt-[1000px]">
+                    <div className="font-bold text-4xl text-headingBlack">
+                      Placeholder to allow scrolling
+                    </div>
                   </div>
                 </div>
               </div>
