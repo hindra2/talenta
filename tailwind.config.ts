@@ -19,6 +19,7 @@ const config: Config = {
         bold: "700",
       },
       fontSize: {
+        xxxs: "0.6rem",
         xxs: "0.62rem",
         l: "0.93rem",
       },
