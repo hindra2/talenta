@@ -1,7 +1,11 @@
 import Header from "@/Components/logo";
+import Image from "next/image";
+
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Image src="/topRightBGLogin.png" alt="school logo" width={100} height={100} />
       <div className="mt-[100px]">
         <div className="ml-[110px]">
           <span className="text-5xl font-bold text-headingBlack">Login
@@ -12,13 +16,13 @@ export default function Home() {
           </span>
         </div>
         <div>
-          <div className="flex w-[60%] h-[50px] w-[400px] bg-white shadow-lg rounded-2xl ml-[110px] mt-[20px]">
+          <div className="flex h-[50px] w-[400px] bg-white shadow-lg rounded-2xl ml-[100px] mt-[20px]">
             <span className="ml-[40px] mt-[5px] font-bold text-xxxs text-headingBlack">EMAIL</span>
           </div>
-          <div className="flex w-[60%] h-[50px] w-[400px] mt-[15px] bg-white shadow-lg rounded-2xl ml-[110px]">
+          <div className="flex h-[50px] w-[400px] mt-[15px] bg-white shadow-lg rounded-2xl ml-[100px]">
             <span className="ml-[40px] mt-[5px] font-bold text-xxxs text-headingBlack">PASSWORD</span>
           </div>
-          <div className="flex w-[60%] h-[30px] w-[110px] mt-[25px] bg-red-400 shadow-lg rounded-3xl ml-[390px]" >
+          <div className="flex h-[30px] w-[110px] mt-[25px] bg-red-400 shadow-lg rounded-3xl ml-[390px]" >
             <button className="ml-[33.5px] mt-[2px] font-bold text-sm text-white"><center>LOGIN</center></button>
           </div>
         </div>
