@@ -13,6 +13,9 @@ export default function Home() {
         <Link href="/login-page">
           <p>login</p>
         </Link>
+        <Link href="/home-page">
+          <p>homepage</p>
+        </Link>
       </div>
     </main>
   );
