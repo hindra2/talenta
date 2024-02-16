@@ -15,15 +15,18 @@ export default function Home() {
                     </span>
                     <div className="w-[500px]">
                         <button className="bg-red-400 rounded-3xl h-[40px] w-[145px] mt-[0px]"><center className="text-white">Login</center></button>
-                        <button className="bg-white rounded-3xl h-[40px] w-[145px] mt-[10px] ml-[25px] outline"><center className="text-gray-400">How It Works?</center>
+                        <button className="bg-white rounded-3xl h-[40px] w-[145px] mt-[10px] ml-[25px] outline-4"><center className="text-gray-400">How It Works?</center>
                         </button>
                     </div>
-                    <div className="mt-[70px]">
-                        <span className="text-xl text-extra-bold">
+                    <div className="w-[750px] mt-[100px]">
+                        <span className="text-xl text-gray-800 font-bold">
                             Are you an institution?
                         </span>
-                        <span>
-
+                        <br></br>
+                        <span className="text-subheadingBlack">
+                            Revolutionize your educational experience and unlock the full potential of your students with our platform!
+                            <br></br>
+                            Explore <u className="font-bold">partnership</u> opportunities or <u className="font-bold">contact us for more information</u>
                         </span>
                     </div>
                 </div>

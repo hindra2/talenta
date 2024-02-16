@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        homepageBGPhoto: "url('/public/homepageBGPhoto.png')"
+      },
       fontFamily: {
         medium: ["proxima-nova", "sans-serif"], // 'Medium' font style
         semibold: ["proxima-nova", "sans-serif"], // 'Semibold' font style
