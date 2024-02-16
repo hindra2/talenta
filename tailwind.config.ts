@@ -35,6 +35,7 @@ const config: Config = {
         headingBlack: "#3f3f3f",
         subheadingBlack: "#6d6d6d",
         captionBlack: "#909090",
+        teacherContainer: "#efefef",
       },
     },
   },

@@ -26,7 +26,7 @@ export default function Home() {
       <div className="grid grid-cols-10">
         <div className="col-span-7">
           {/* Student grid */}
-          <div className="ml-[175px] mt-[20px] h-dvh bg-gray-200 rounded-3xl p-5 shadow-lg">
+          <div className="ml-[175px] mt-[20px] h-dvh bg-teacherContainer rounded-3xl p-5 shadow-inner">
             <div className="grid grid-cols-6 gap-4">
               <Student_Card /> { }
               <Student_Card /> { }
@@ -76,7 +76,7 @@ export default function Home() {
           </div>
 
           {/* Update div */}
-          <div className="m-[60px] mt-[20px] h-[500px] bg-gray-200 rounded-3xl p-5 shadow-lg">
+          <div className="m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
             <Student_Update />  { }
           </div>
         </div>
