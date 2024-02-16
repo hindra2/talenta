@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="">
-      <div className="ml-[1291px] mt-[0px]"><Image src="/topRightBGLogin.png" alt="school logo" width={400} height={400} />
+      <div className="flex flex-col items-end"><Image src="/topRightBGLogin.png" alt="school logo" width={400} height={400} />
       </div>
       <div className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="mt-[-160px]">
