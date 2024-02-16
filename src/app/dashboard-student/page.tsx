@@ -16,7 +16,7 @@ export default function Home() {
             </span>
             <span className="mx-1 text-subheadingBlack"> | </span>
             <span className="text-subheadingBlack">
-              Grade 8A &gt; [Student's Name]
+              Grade 8A &gt; [Student&apos;s Name]
             </span>
           </div>
         </div>
@@ -24,7 +24,7 @@ export default function Home() {
       <hr className="self-start ml-[150px] border-t border-gray-200 my-[20px] w-[70%]" />
       <div className="self-start ml-[150px]">
         <span className="font-bold text-4xl text-headingRed">Jane Doe</span>
-        <span className="font-medium text-3xl text-headingRed">'s Profile</span>
+        <span className="font-medium text-3xl text-headingRed">&apos;s Profile</span>
       </div>
       {/* Main Content Container */}
       <div className="flex w-full mt-[30px] ml-[250px]">
@@ -40,7 +40,7 @@ export default function Home() {
             Non-Academics
           </button>
           <button className="text-left text-xl text-subheadingBlack ml-5">
-            Teacher's Notes
+            Teacher&apos;s Notes
           </button>
         </div>
         <div className="flex-grow">
@@ -214,7 +214,7 @@ export default function Home() {
                     Homeroom Teacher
                   </p>
                   <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
-                    [Teacher's Name]
+                    [Teacher&apos;s Name]
                   </p>
                   <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
                     [School Name]
@@ -233,7 +233,7 @@ export default function Home() {
                     School Admin
                   </p>
                   <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
-                    [Admin's Name]
+                    [Admin&apos;s Name]
                   </p>
                   <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
                     [School Name]
