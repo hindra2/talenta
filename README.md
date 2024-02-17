@@ -11,6 +11,7 @@ An educational platform serving as a detailed repository for student academic an
 Installing dependencies:
 
 ```bash
+npm install node
 npm install
 ```
 
@@ -24,4 +25,9 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+Building the server:
+```bash
+npm run build
 ```
