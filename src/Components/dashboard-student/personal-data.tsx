@@ -1,7 +1,7 @@
 const Personal_Data = () => {
   return (
     <div className="w-full">
-      <div className="flex w-full bg-white shadow-lg rounded-3xl overflow-y-auto">
+      <div className="flex w-full bg-white shadow-lg rounded-3xl overflow-y-auto max-h-[100vh]">
         <div className="flex">
           <div className="py-10 px-14 flex-1">
             <div className="font-bold text-4xl text-headingBlack">Profile</div>
@@ -150,7 +150,6 @@ const Personal_Data = () => {
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 };
