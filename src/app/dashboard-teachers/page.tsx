@@ -76,7 +76,7 @@ export default function Home() {
           </div>
 
           {/* Update div */}
-          <div className="m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
+          <div className="flex flex-cols m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
             <Student_Update />  { }
           </div>
         </div>

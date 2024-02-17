@@ -30,18 +30,18 @@ export default function Home() {
       <div className="flex w-full mt-[30px] ml-[250px]">
         {/* Profile Outline Buttons */}
         <div className="flex flex-col ml-[30px]">
-          <button className="mb-6 text-xl text-headingRed border-l-2 border-headingRed">
-            Personal Data
-          </button>
-          <button className="mb-6 text-left text-xl text-subheadingBlack ml-5">
-            Academics
-          </button>
-          <button className="mb-6 text-left text-xl text-subheadingBlack ml-5">
-            Non-Academics
-          </button>
-          <button className="text-left text-xl text-subheadingBlack ml-5">
-            Teacher&apos;s Notes
-          </button>
+          <button className="profile-button mb-6 text-xl text-headingRed border-l-2 border-headingRed" data-section="personalData">
+              Personal Data
+            </button>
+            <button className="profile-button mb-6 text-left text-xl text-subheadingBlack ml-5" data-section="academics">
+              Academics
+            </button>
+            <button className="profile-button mb-6 text-left text-xl text-subheadingBlack ml-5" data-section="nonAcademics">
+              Non-Academics
+            </button>
+            <button className="profile-button text-left text-xl text-subheadingBlack ml-5" data-section="teachersNotes">
+              Teacher&apos;s Notes
+            </button>
         </div>
         <div className="flex-grow">
           <div className="flex justify-center">
