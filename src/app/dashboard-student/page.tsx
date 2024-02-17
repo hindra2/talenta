@@ -59,30 +59,31 @@ export default function Home() {
         {/* Profile Outline Buttons */}
         <div className="flex flex-col ml-[30px]">
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'personalData' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'personalData' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('personalData')}
           >
             Personal Data
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'academics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'academics' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('academics')}
           >
             Academics
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('nonAcademics')}
           >
             Non-Academics
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('teachersNotes')}
           >
-            Teacher&apos;s Notes
+            Teacher's Notes
           </button>
         </div>
+
         <div className="flex-grow">
           <div className="flex justify-center">
             {/* Profile Container Section */}
