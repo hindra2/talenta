@@ -37,7 +37,7 @@ export default function Home() {
           Dashboard
         </span>
         <div className="flex items-end w-[4600px]">
-          <Image src="/school.png" alt="school logo" width={25} height={25} />
+          <Image src="/talenta/school.png" alt="school logo" width={25} height={25} />
           <div className="ml-3">
             <span className="border-b-2 border-subheadingBlack text-subheadingBlack">
               Decelis Junior High School
