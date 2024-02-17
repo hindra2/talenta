@@ -1,9 +1,10 @@
+import Academics_Data from "./academics-data";
 const Academics = () => {
-    return (
-      <div className="">
-        <span>academics</span>
-      </div>
-    );
-  };
-  
-  export default Academics;
+  return (
+    <div>
+      <Academics_Data />
+    </div>
+  );
+};
+
+export default Academics;
