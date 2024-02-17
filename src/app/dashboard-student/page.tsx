@@ -8,6 +8,7 @@ import Personal_Data from "@/Components/dashboard-student/personal-data";
 import Teacher_Notes from '@/Components/dashboard-student/teacher-notes';
 import Academics from '@/Components/dashboard-student/academics';
 import Non_Academics from '@/Components/dashboard-student/non-academics';
+import Administrator from '@/Components/dashboard-student/administrator';
 
 export default function Home() {
   const [activeComponent, setActiveComponent] = useState('personalData');
@@ -102,44 +103,8 @@ export default function Home() {
               <span className="font-semibold text-xl text-headingBlack">
                 Administrator
               </span>
-              <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2">
-                <Image
-                  src="/administratorPlaceholder.png"
-                  alt="Electronic"
-                  width={50}
-                  height={50}
-                />
-                <div className="ml-2">
-                  <p className="font-semibold text-xs text-subheadingBlack leading-none mt-[5px]">
-                    Homeroom Teacher
-                  </p>
-                  <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
-                    [Teacher&apos;s Name]
-                  </p>
-                  <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
-                    [School Name]
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2 mt-[20px]">
-                <Image
-                  src="/administratorPlaceholder.png"
-                  alt="Electronic"
-                  width={50}
-                  height={50}
-                />
-                <div className="ml-2">
-                  <p className="font-semibold text-xs text-subheadingBlack leading-none mt-[5px]">
-                    School Admin
-                  </p>
-                  <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
-                    [Admin&apos;s Name]
-                  </p>
-                  <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
-                    [School Name]
-                  </p>
-                </div>
-              </div>
+              <Administrator />
+              <Administrator />
               <button>
                 <div className="flex bg-headingRed w-[335px] h-[50px] mt-[375px] rounded-full items-center justify-center">
                   <span className="text-xl text-white">Download as PDF</span>
