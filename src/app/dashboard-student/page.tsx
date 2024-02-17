@@ -8,6 +8,7 @@ import Personal_Data from "@/Components/dashboard-student/personal-data";
 import Teacher_Notes from '@/Components/dashboard-student/teacher-notes';
 import Academics from '@/Components/dashboard-student/academics';
 import Non_Academics from '@/Components/dashboard-student/non-academics';
+import Administrator from '@/Components/dashboard-student/administrator';
 
 export default function Home() {
   const [activeComponent, setActiveComponent] = useState('personalData');
@@ -58,30 +59,31 @@ export default function Home() {
         {/* Profile Outline Buttons */}
         <div className="flex flex-col ml-[30px]">
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'personalData' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'personalData' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('personalData')}
           >
             Personal Data
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'academics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'academics' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('academics')}
           >
             Academics
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('nonAcademics')}
           >
             Non-Academics
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('teachersNotes')}
           >
             Teacher&apos;s Notes
           </button>
         </div>
+
         <div className="flex-grow">
           <div className="flex justify-center">
             {/* Profile Container Section */}
@@ -102,48 +104,12 @@ export default function Home() {
               <span className="font-semibold text-xl text-headingBlack">
                 Administrator
               </span>
-              <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2">
-                <Image
-                  src="/talenta/administratorPlaceholder.png"
-                  alt="Electronic"
-                  width={50}
-                  height={50}
-                />
-                <div className="ml-2">
-                  <p className="font-semibold text-xs text-subheadingBlack leading-none mt-[5px]">
-                    Homeroom Teacher
-                  </p>
-                  <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
-                    [Teacher&apos;s Name]
-                  </p>
-                  <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
-                    [School Name]
-                  </p>
-                </div>
+              <Administrator />
+              <Administrator />
+              <button className="fixed bottom-5">
+              <div className="flex bg-headingRed w-[335px] h-[50px] rounded-full items-center justify-center">
+                <span className="text-xl text-white">Download as PDF</span>
               </div>
-              <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2 mt-[20px]">
-                <Image
-                  src="/talenta/administratorPlaceholder.png"
-                  alt="Electronic"
-                  width={50}
-                  height={50}
-                />
-                <div className="ml-2">
-                  <p className="font-semibold text-xs text-subheadingBlack leading-none mt-[5px]">
-                    School Admin
-                  </p>
-                  <p className="font-bold text-lg text-headerBlack leading-none mb-1 text-veryDarkBlue">
-                    [Admin&apos;s Name]
-                  </p>
-                  <p className="font-bold text-xs text-subheadingBlack leading-none mb-1 text-veryDarkBlue">
-                    [School Name]
-                  </p>
-                </div>
-              </div>
-              <button>
-                <div className="flex bg-headingRed w-[335px] h-[50px] mt-[375px] rounded-full items-center justify-center">
-                  <span className="text-xl text-white">Download as PDF</span>
-                </div>
               </button>
             </div>
           </div>
