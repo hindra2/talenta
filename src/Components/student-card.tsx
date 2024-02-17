@@ -19,7 +19,7 @@ const Student_Card = () => {
         <div>
             <button><span className="text-xxs">See Profile</span></button>
             <span className="text-xxs"> | </span>
-            <button><span className="text-xxs">Messages</span></button>
+            <button><span className="text-xxs">Notes</span></button>
         </div>
     </div>
   );
