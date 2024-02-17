@@ -36,7 +36,7 @@ export default function Home() {
           Dashboard
         </span>
         <div className="flex items-end w-[4600px]">
-          <Image src="/school.png" alt="school logo" width={25} height={25} />
+          <Image src="/talenta/school.png" alt="school logo" width={25} height={25} />
           <div className="ml-3">
             <span className="border-b-2 border-subheadingBlack text-subheadingBlack">
               Decelis Junior High School
@@ -104,7 +104,7 @@ export default function Home() {
               </span>
               <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2">
                 <Image
-                  src="/administratorPlaceholder.png"
+                  src="/talenta/administratorPlaceholder.png"
                   alt="Electronic"
                   width={50}
                   height={50}
@@ -123,7 +123,7 @@ export default function Home() {
               </div>
               <div className="flex items-center h-[75px] w-[335px] bg-white shadow-md rounded-xl px-2 mt-[20px]">
                 <Image
-                  src="/administratorPlaceholder.png"
+                  src="/talenta/administratorPlaceholder.png"
                   alt="Electronic"
                   width={50}
                   height={50}
