@@ -1,11 +1,14 @@
+import Teacher_Notes_Data from "./teacher-notes-data";
+
 const Teacher_Notes = () => {
   return (
-    <div className="w-full h-full">
-      <div className="flex w-full bg-white shadow-lg rounded-3xl overflow-y-auto max-h-[100vh]">
-        <div className="flex">
-          <div className="py-10 px-14 flex-1"></div>
+    <div className="h-full w-full">
+      <div className="flex flex-col w-full bg-teacherContainer rounded-3xl overflow-y-auto h-full shadow-inner">
+        <div className="flex-grow py-7 px-7">
+          <Teacher_Notes_Data />
+          <Teacher_Notes_Data />
         </div>
-        <div className="flex-1 mt-[1000px]">
+        <div className="mt-auto">
           <div className="font-bold text-4xl text-headingBlack">
             Placeholder to allow scrolling
           </div>
