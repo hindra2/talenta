@@ -105,17 +105,8 @@ export default function Home() {
         <div className="flex-grow">
           <div className="flex justify-center">
             {/* Profile Container Section */}
-            <div className="flex w-[60%] h-[80vh] bg-white shadow-lg rounded-3xl ml-[-70px] overflow-y-auto">
-              <div className="flex">
-                <div className="py-10 px-14 flex-1">
-                  {renderComponent()}
-                  <div className="flex-1 mt-[1000px]">
-                    <div className="font-bold text-4xl text-headingBlack">
-                      Placeholder to allow scrolling
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="flex h-[80vh] w-[60%] ml-[-70px]">
+              {renderComponent()}
             </div>
             {/* Administrator Section & Download as PDF button*/}
             <div className="ml-[30px]">
