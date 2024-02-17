@@ -25,7 +25,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-testtest
-
-Jonathan

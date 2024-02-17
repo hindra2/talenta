@@ -4,7 +4,7 @@ import { Space_Mono } from "next/font/google";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden h-screen">
       {/* Main Header Section */}
       <div className="self-start text-left ml-[175px] mt-8">
         <span className="text-6xl font-semibold text-headingBlack">
@@ -26,8 +26,28 @@ export default function Home() {
       <div className="grid grid-cols-10">
         <div className="col-span-7">
           {/* Student grid */}
-          <div className="ml-[175px] mt-[20px] h-dvh bg-teacherContainer rounded-3xl p-5 shadow-inner">
+          <div className="ml-[175px] mt-[20px] h-dvh bg-teacherContainer rounded-3xl p-5 shadow-inner overflow-y-auto">
             <div className="grid grid-cols-6 gap-4">
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
+              <Student_Card /> { }
               <Student_Card /> { }
               <Student_Card /> { }
               <Student_Card /> { }
@@ -76,7 +96,7 @@ export default function Home() {
           </div>
 
           {/* Update div */}
-          <div className="m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
+          <div className="grid grid-cols m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
             <Student_Update />  { }
           </div>
         </div>
