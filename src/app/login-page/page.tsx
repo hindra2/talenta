@@ -34,7 +34,7 @@ export default function Home() {
           <div className="w-[650px] text-1xl text-headingBlack mt-[40px]">
             <center>Only registered students and educators from partnered schools can access their accounts.</center>
 
-            <center>If you're unsure, find out <u className="font-bold">how it works</u>.</center>
+            <center>If you&apos;re unsure, find out <u className="font-bold">how it works</u>.</center>
           </div>
           <div className="ml-[245px] mt-[20px] w-[175px] h-[175px]">
             <Header /> { }
