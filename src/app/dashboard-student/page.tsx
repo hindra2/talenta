@@ -1,7 +1,33 @@
-import Personal_Data from "@/Components/personal-data";
+'use client'
+
+import React, { useState } from 'react';
 import Image from "next/image";
 
+// custom components
+import Personal_Data from "@/Components/dashboard-student/personal-data";
+import Teacher_Notes from '@/Components/dashboard-student/teacher-notes';
+import Academics from '@/Components/dashboard-student/academics';
+import Non_Academics from '@/Components/dashboard-student/non-academics';
+
 export default function Home() {
+  const [activeComponent, setActiveComponent] = useState('personalData');
+
+  // This function returns the corresponding component based on the active state
+  const renderComponent = () => {
+    switch (activeComponent) {
+      case 'personalData':
+        return <Personal_Data />;
+      case 'academics':
+        return <Academics />;
+      case 'nonAcademics':
+        return <Non_Academics />;
+      case 'teachersNotes':
+        return <Teacher_Notes />;
+      default:
+        return <Personal_Data />;
+    }
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden h-screen">
       {/* Main Header Section */}
@@ -31,18 +57,30 @@ export default function Home() {
       <div className="flex w-full mt-[30px] ml-[250px]">
         {/* Profile Outline Buttons */}
         <div className="flex flex-col ml-[30px]">
-          <button className="profile-button mb-6 text-xl text-headingRed border-l-2 border-headingRed" data-section="personalData">
-              Personal Data
-            </button>
-            <button className="profile-button mb-6 text-left text-xl text-subheadingBlack ml-5" data-section="academics">
-              Academics
-            </button>
-            <button className="profile-button mb-6 text-left text-xl text-subheadingBlack ml-5" data-section="nonAcademics">
-              Non-Academics
-            </button>
-            <button className="profile-button text-left text-xl text-subheadingBlack ml-5" data-section="teachersNotes">
-              Teacher&apos;s Notes
-            </button>
+          <button
+            className={`profile-button mb-6 text-xl ${activeComponent === 'personalData' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            onClick={() => setActiveComponent('personalData')}
+          >
+            Personal Data
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl ${activeComponent === 'academics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
+            onClick={() => setActiveComponent('academics')}
+          >
+            Academics
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack ml-5'}`}
+            onClick={() => setActiveComponent('nonAcademics')}
+          >
+            Non-Academics
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack ml-5'}`}
+            onClick={() => setActiveComponent('teachersNotes')}
+          >
+            Teacher&apos;s Notes
+          </button>
         </div>
         <div className="flex-grow">
           <div className="flex justify-center">
@@ -50,7 +88,7 @@ export default function Home() {
             <div className="flex w-[60%] h-[80vh] bg-white shadow-lg rounded-3xl ml-[-70px] overflow-y-auto">
               <div className="flex">
                 <div className="py-10 px-14 flex-1">
-                  <Personal_Data />
+                  {renderComponent()}
                   <div className="flex-1 mt-[1000px]">
                     <div className="font-bold text-4xl text-headingBlack">
                       Placeholder to allow scrolling
