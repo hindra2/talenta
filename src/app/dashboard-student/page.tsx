@@ -70,13 +70,13 @@ export default function Home() {
             Academics
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack ml-5'}`}
+            className={`profile-button mb-6 text-xl ${activeComponent === 'nonAcademics' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('nonAcademics')}
           >
             Non-Academics
           </button>
           <button
-            className={`profile-button mb-6 text-xl ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack ml-5'}`}
+            className={`profile-button mb-6 text-xl ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('teachersNotes')}
           >
             Teacher&apos;s Notes
