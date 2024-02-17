@@ -80,7 +80,7 @@ export default function Home() {
             className={`profile-button mb-6 text-xl text-left p-2 ${activeComponent === 'teachersNotes' ? 'text-headingRed border-l-2 border-headingRed -ml-2 pl-4' : 'text-subheadingBlack'}`}
             onClick={() => setActiveComponent('teachersNotes')}
           >
-            Teacher's Notes
+            Teacher&apos;s Notes
           </button>
         </div>
 
