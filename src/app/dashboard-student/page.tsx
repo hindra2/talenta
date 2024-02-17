@@ -105,10 +105,10 @@ export default function Home() {
               </span>
               <Administrator />
               <Administrator />
-              <button>
-                <div className="flex bg-headingRed w-[335px] h-[50px] mt-[375px] rounded-full items-center justify-center">
-                  <span className="text-xl text-white">Download as PDF</span>
-                </div>
+              <button className="fixed bottom-5">
+              <div className="flex bg-headingRed w-[335px] h-[50px] rounded-full items-center justify-center">
+                <span className="text-xl text-white">Download as PDF</span>
+              </div>
               </button>
             </div>
           </div>
