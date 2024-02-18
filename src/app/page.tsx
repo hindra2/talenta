@@ -5,6 +5,10 @@ export default function Home() {
   return (
     <main>
       <div>
+        <div className="flex flex-col float-end h-[50px] w-[900px] mt-[40px] bg-red-400 rounded-l-3xl">
+          <div></div>
+        </div>
+        <br></br>
         <div className="flex min-h-screen flex-col mt-[150px] ml-[175px] ">
           <span className="text-3xl text-red-500">Welcome to</span>
           <div className="ml-[-14px] mt-[0px]">
@@ -54,6 +58,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="bg-(/homepageBGPhoto.png')"></div>
       </div>
     </main>
   );
