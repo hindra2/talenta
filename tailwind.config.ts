@@ -25,7 +25,8 @@ const config: Config = {
         xxxs: "0.6rem",
         xxs: "0.62rem",
         l: "0.93rem",
-        sxl: "1.13rem"
+        sxl: "1.13rem",
+        s2xl: "1.35rem",
       },
       colors: {
         background: "#FAFAFA",
