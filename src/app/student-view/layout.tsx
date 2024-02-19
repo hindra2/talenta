@@ -4,7 +4,7 @@ import Sidebar from "@/Components/sidebar";
 
 export const metadata: Metadata = {
   title: "Talenta",
-  description: "Dashboard Teachers",
+  description: "Student View Teachers",
 };
 
 export default function RootLayout({
