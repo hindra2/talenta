@@ -10,8 +10,12 @@ export default function Home() {
             <button className="text-xl text-white mt-[15px]">Home</button>
             <button className="text-xl text-white mt-[15px]">About Us</button>
             <button className="text-xl text-white mt-[15px]">Features</button>
-            <button className="text-xl text-white mt-[15px]">Partnership</button>
-            <button className="text-xl text-white mt-[15px]">How It Works</button>
+            <button className="text-xl text-white mt-[15px]">
+              Partnership
+            </button>
+            <button className="text-xl text-white mt-[15px]">
+              How It Works
+            </button>
           </div>
         </div>
         <br></br>
@@ -51,12 +55,13 @@ export default function Home() {
               <u className="font-bold">contact us for more information</u>
             </span>
           </div>
-          <div className="flex flex-col items-end mt-[-300px]"><Image
-            src="/homepageBGPhoto.png"
-            alt="school logo"
-            width={1200}
-            height={1000}
-          />
+          <div className="flex flex-col items-end mt-[-300px]">
+            <Image
+              src="/homepageBGPhoto.png"
+              alt="school logo"
+              width={1200}
+              height={1000}
+            />
           </div>
           <div className="mt-10">
             <Link href="dashboard-teachers">

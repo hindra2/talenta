@@ -117,23 +117,32 @@ export default function Home() {
 
                 <div className="mt-2 flex justify-between items-center">
                   <span className="mr-4">Teacher:</span>
-                  <input className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline" placeholder=" " />
+                  <input
+                    className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline"
+                    placeholder=" "
+                  />
                 </div>
 
                 <div className="mt-2 flex justify-between items-center">
                   <span className="mr-4">Administrator:</span>
-                  <input className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline" placeholder=" " />
+                  <input
+                    className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline"
+                    placeholder=" "
+                  />
                 </div>
 
                 <div className="mt-2 flex justify-between items-center">
                   <span className="mr-4">Class Size:</span>
-                  <input className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline" placeholder=" " />
+                  <input
+                    className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline"
+                    placeholder=" "
+                  />
                 </div>
               </div>
 
               {/* Update div */}
               <div className="grid grid-cols m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
-                <Student_Update />  { }
+                <Student_Update /> {}
               </div>
             </div>
           </div>
