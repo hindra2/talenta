@@ -9,12 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        homepageBGPhoto: "url('/homepageBGPhoto.png')"
+        homepageBGPhoto: "url('/homepageBGPhoto.png')",
       },
       fontFamily: {
-        medium: ["proxima-nova", "sans-serif"], // 'Medium' font style
-        semibold: ["proxima-nova", "sans-serif"], // 'Semibold' font style
-        bold: ["proxima-nova", "sans-serif"], // 'Bold' font style
+        sans: ["Montserrat", "sans-serif"], // Set Montserrat as the default sans-serif font
       },
       fontWeight: {
         medium: "500",
@@ -32,7 +30,7 @@ const config: Config = {
         background: "#FAFAFA",
         foreground: "#FFFFFF",
         headingRed: "#ff5c5c",
-        subheadingRed: "ff6d6d",
+        subheadingRed: "#ff6d6d", // Corrected the missing '#' here
         headingBlack: "#3f3f3f",
         subheadingBlack: "#6d6d6d",
         captionBlack: "#909090",

@@ -137,7 +137,7 @@ const Personal_Data = () => {
             </div>
             {/* Education Progression Section */}
             <div className="flex-1 mt-[40px]">
-              <div className="font-bold text-4xl text-headingBlack">
+              <div className="font-sans font-bold text-4xl text-headingBlack">
                 Education Progression
               </div>
               <span className="text-sm">No change in progession</span>
