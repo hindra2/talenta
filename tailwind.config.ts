@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        homepageBGPhoto: "url('/homepageBGPhoto.png')",
+        'homepageBGPhoto': "url('/homepageBGPhoto.png')",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"], // Set Montserrat as the default sans-serif font

@@ -6,16 +6,16 @@ export default function Home() {
     <main>
       <div>
         <div className="flex flex-col float-end h-[60px] w-[900px] mt-[50px] bg-red-400 rounded-l-full">
-          <div className="grid grid-flow-col auto-cols-auto">
-            <button className="text-xl text-white mt-[15px]">Home</button>
-            <button className="text-xl text-white mt-[15px]">About Us</button>
-            <button className="text-xl text-white mt-[15px]">Features</button>
-            <button className="text-xl text-white mt-[15px]">
+          <div className="grid grid-flow-col auto-cols-auto ml-[75px]">
+            <a href="/" className="text-xl text-white mt-[15px]">Home</a>
+            <a href="about-page" className="text-xl text-white mt-[15px]">About Us</a>
+            <a href="features-page" className="text-xl text-white mt-[15px]">Features</a>
+            <a href="partnership-page" className="text-xl text-white mt-[15px]">
               Partnership
-            </button>
-            <button className="text-xl text-white mt-[15px]">
+            </a>
+            <a href="hiw-page" className="text-xl text-white mt-[15px]">
               How It Works
-            </button>
+            </a>
           </div>
         </div>
         <br></br>
@@ -38,9 +38,10 @@ export default function Home() {
                 Login
               </button>
             </Link>
-            <button className="bg-white rounded-3xl h-[40px] w-[145px] mt-[10px] ml-[25px] outline-4">
-              <center className="text-gray-400">How It Works?</center>
-            </button>
+            <Link href="hiw-page">
+              <button className="bg-white rounded-3xl h-[40px] w-[145px] mt-[10px] ml-[25px] outline outline-2 outline-offset-0 text-gray-400">How It Works
+              </button>
+            </Link>
           </div>
           <div className="w-[750px] mt-[100px]">
             <span className="text-xl text-gray-800 font-bold">
@@ -51,11 +52,11 @@ export default function Home() {
               Revolutionize your educational experience and unlock the full
               potential of your students with our platform!
               <br></br>
-              Explore <u className="font-bold">partnership</u> opportunities or{" "}
-              <u className="font-bold">contact us for more information</u>
+              Explore <a href="partnership-page" className="font-bold underline">partnership</a> opportunities or{" "}
+              <a href="hiw-page" className="font-bold underline"> contact us for more information</a>
             </span>
           </div>
-          <div className="flex flex-col items-end mt-[-300px]">
+          <div className="flex flex-col items-end mt-[-150px]">
             <Image
               src="/homepageBGPhoto.png"
               alt="school logo"
@@ -76,8 +77,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="bg-(/homepageBGPhoto.png')"></div>
       </div>
-    </main>
+    </main >
   );
 }
