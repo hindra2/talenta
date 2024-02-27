@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Logo from "@/Components/logo";
-import Sidebar from "@/Components/sidebar";
+import Sidebar from "@/Components/dashboard-teachers/sidebar";
 
 export const metadata: Metadata = {
   title: "Talenta",

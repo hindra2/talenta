@@ -73,7 +73,7 @@ export default function Home() {
         <div className="col-span-3">
           {/* Searchbox div */}
           <div className="m-[60px] mt-[20px] h-[200px] bg-white rounded-3xl p-5 shadow-lg">
-            <div className="items-center">
+            <div className="flex justify-center font-bold">
               <span>Class Details</span>
             </div>
 
@@ -103,6 +103,9 @@ export default function Home() {
           </div>
 
           {/* Update div */}
+          <div className="flex justify-center">
+            <span>Student Updates</span>
+          </div>
           <div className="grid grid-cols m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
             <Student_Update /> {}
           </div>

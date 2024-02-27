@@ -1,6 +1,18 @@
 import Image from "next/image";
+import Popup from "@/Components/dashboard-teachers/popup-text-input";
+import React, { useState } from "react";
 
-const Academics_Data = () => {
+const Academics_Data: React.FC = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
+
   return (
     <div className="w-full">
       <div className="w-full h-[85px] bg-white rounded-2xl px-6 py-4 shadow-xl mb-5">
@@ -28,7 +40,9 @@ const Academics_Data = () => {
               Student&apos;s Name |{" "}
             </span>
           </div>
-          <button>
+
+          {/* Popup */}
+          <button onClick={openPopup}>
             <div className="w-[30px] h-[30px] bg-headingRed flex items-center justify-center rounded-full">
               <Image 
                 src="edit.png"
@@ -38,6 +52,7 @@ const Academics_Data = () => {
               />
             </div>
           </button>
+          <Popup isOpen={isPopupOpen} onClose={closePopup} />
         </div>
       </div>
     </div>
