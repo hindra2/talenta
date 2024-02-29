@@ -1,23 +1,30 @@
-import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
-import ParagraphInput from "@/Components/dashboard-teachers/text-input";
+import React from "react";
 
-interface PropOpen {
+// Define the interface for the props that Popup will receive
+interface PopupProps {
   isOpen: boolean;
   onClose: () => void;
+  title: string;
+  teacherName: string;
+  className: string;
+  noteContent: string;
+  updatedDate: string;
 }
 
-const Popup: React.FC<PropOpen> = ({ isOpen, onClose }) => {
+const Popup: React.FC<PopupProps> = ({
+  isOpen,
+  onClose,
+  title,
+  teacherName,
+  className,
+  noteContent,
+  updatedDate,
+}) => {
+  // If the popup is not open, return null to render nothing
   if (!isOpen) {
     return null;
   }
-
-  const [text, setText] = useState("");
-
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setText(e.target.value);
-  };
 
   return (
     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center">
@@ -27,24 +34,21 @@ const Popup: React.FC<PropOpen> = ({ isOpen, onClose }) => {
         </button>
         <div className="flex flex-col h-full items-start">
           <span className="text-2xl font-semibold text-headingBlack mt-[15px]">
-            Notes Title
+            {title}
           </span>
           <span className="text-l text-headingBlack mt-[5px]">
-            Teacher: John Doe
+            Teacher: {teacherName}
           </span>
           <span className="text-l text-headingBlack mt-[0px]">
-            Class: Geography
+            Class: {className}
           </span>
           <hr className="self-start border-t border-gray-400 my-[15px] w-[94%]" />
-          <div className="text-l text-headingBlack text-justify w-[94%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <div className="text-l text-headingBlack text-justify w-[94%] overflow-auto">
+            {noteContent}
           </div>
           <div className="h-10 absolute bottom-5 w-[94%]">
             <span className="text-l text-headingBlack absolute right-12">
-              Updated on 17 July 2024
+              Updated on {updatedDate}
             </span>
           </div>
         </div>

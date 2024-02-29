@@ -42,22 +42,22 @@ const Teacher_Notes_Data: React.FC<TeacherNotesDataProps> = ({
         <div className="flex justify-between items-center">
           <div className="overflow-hidden">
             <span className="text-l font-semibold text-subheadingBlack">
-              Upload Date :
+              Upload Date:{" "}
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              {uploadDate} |
+              {uploadDate} |{" "}
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
-              Teacher:
+              Teacher:{" "}
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              {teacherName} |
+              {teacherName} |{" "}
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
-              Student:
+              Student:{" "}
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              {studentName} |
+              {studentName}
             </span>
           </div>
           <button onClick={openPopup}>
@@ -65,7 +65,15 @@ const Teacher_Notes_Data: React.FC<TeacherNotesDataProps> = ({
               <span className="text-white font-semibold">Open</span>
             </div>
           </button>
-          <Popup isOpen={isPopupOpen} onClose={closePopup} />
+          <Popup
+            isOpen={isPopupOpen}
+            onClose={closePopup}
+            title={title}
+            teacherName={teacherName}
+            className="Geography"
+            noteContent={noteContent}
+            updatedDate={uploadDate}
+          />
         </div>
         <div className="mt-3 text-l text-captionBlack overflow-auto">
           {truncateContent(noteContent, previewLength)}
