@@ -1,11 +1,22 @@
-const Teacher_Notes_Data = () => {
+import Popup from "@/Components/dashboard-student/teacher-notes-popup";
+import React, { useState } from "react";
+
+const Teacher_Notes_Data: React.FC = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
   return (
     <div className="w-full flex justify-center">
       {" "}
       {/* Ensure outer div centers the content */}
       <div className="max-w-4xl w-full h-auto bg-white rounded-2xl px-6 py-4 shadow-xl mb-5 overflow-hidden">
         {" "}
-        {/* Set a max-width */}
         <span className="text-lg font-semibold text-headingBlack">
           Notes Title
         </span>
@@ -30,11 +41,12 @@ const Teacher_Notes_Data = () => {
               Student&apos;s Name |
             </span>
           </div>
-          <button>
+          <button onClick={openPopup}>
             <div className="w-[85px] h-[30px] bg-headingRed flex items-center justify-center rounded-3xl">
               <span className="text-white font-semibold">Open</span>
             </div>
           </button>
+          <Popup isOpen={isPopupOpen} onClose={closePopup} />
         </div>
         <div className="mt-3 text-l text-captionBlack overflow-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
