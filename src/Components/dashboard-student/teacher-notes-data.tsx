@@ -1,7 +1,23 @@
 import Popup from "@/Components/dashboard-student/teacher-notes-popup";
 import React, { useState } from "react";
 
-const Teacher_Notes_Data: React.FC = () => {
+type TeacherNotesDataProps = {
+  title: string;
+  uploadDate: string;
+  teacherName: string;
+  studentName: string;
+  noteContent: string;
+  previewLength?: number; // Optional prop to customize the preview length
+};
+
+const Teacher_Notes_Data: React.FC<TeacherNotesDataProps> = ({
+  title,
+  uploadDate,
+  teacherName,
+  studentName,
+  noteContent,
+  previewLength = 225,
+}) => {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   const openPopup = () => {
@@ -11,34 +27,37 @@ const Teacher_Notes_Data: React.FC = () => {
   const closePopup = () => {
     setPopupOpen(false);
   };
+
+  // Function to truncate note content
+  const truncateContent = (content: string, maxLength: number) => {
+    return content.length > maxLength
+      ? content.substring(0, maxLength) + "..."
+      : content;
+  };
+
   return (
     <div className="w-full flex justify-center">
-      {" "}
-      {/* Ensure outer div centers the content */}
       <div className="max-w-4xl w-full h-auto bg-white rounded-2xl px-6 py-4 shadow-xl mb-5 overflow-hidden">
-        {" "}
-        <span className="text-lg font-semibold text-headingBlack">
-          Notes Title
-        </span>
+        <span className="text-lg font-semibold text-headingBlack">{title}</span>
         <div className="flex justify-between items-center">
           <div className="overflow-hidden">
             <span className="text-l font-semibold text-subheadingBlack">
               Upload Date :
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              _ / _ / __ |
+              {uploadDate} |
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
               Teacher:
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              Teacher&apos;s Name |
+              {teacherName} |
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
               Student:
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              Student&apos;s Name |
+              {studentName} |
             </span>
           </div>
           <button onClick={openPopup}>
@@ -49,10 +68,7 @@ const Teacher_Notes_Data: React.FC = () => {
           <Popup isOpen={isPopupOpen} onClose={closePopup} />
         </div>
         <div className="mt-3 text-l text-captionBlack overflow-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {truncateContent(noteContent, previewLength)}
         </div>
       </div>
     </div>
