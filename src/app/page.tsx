@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <div>
+    <main className="overflow-hidden h-screen">
+      <div className="overflow-hidden h-screen">
         <div className="flex flex-col float-end h-[60px] w-[900px] mt-[50px] bg-red-400 rounded-l-full">
           <div className="grid grid-flow-col auto-cols-auto ml-[75px]">
             <a href="/" className="text-xl text-white mt-[15px]">
@@ -39,7 +39,7 @@ export default function Home() {
             Are you a user? Access your account to explore & engage!
           </span>
           <div className="w-[500px]">
-            <Link href="dashboard-student">
+            <Link href="login-page">
               <button className="bg-red-400 rounded-3xl h-[40px] w-[145px] mt-[0px] items-center text-white">
                 Login
               </button>

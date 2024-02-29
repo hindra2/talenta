@@ -62,9 +62,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex h-[35px] w-[110px] mt-[25px] bg-red-400 shadow-lg rounded-3xl ml-[390px]">
-              <button className="ml-[33.5px] mt-[2px] font-bold text-sm text-white">
-                <center>LOGIN</center>
-              </button>
+              <Link href="dashboard-student">
+                <button className="ml-[33.5px] mt-[2px] font-bold text-sm text-white">
+                  <center>LOGIN</center>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-[650px] text-1xl text-headingBlack mt-[40px]">
