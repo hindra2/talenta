@@ -21,7 +21,7 @@ const Popup: React.FC<PropOpen> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center">
-      <div className="bg-white p-8 rounded w-[45%] h-[95%] text-center rounded-3xl relative flex items-center justify-center">
+      <div className="bg-white p-8 w-[45%] h-[95%] text-center rounded-3xl relative flex items-center justify-center">
         <button className="absolute top-0 right-0 p-6" onClick={onClose}>
           <Image src="/close.png" alt="Close" width={20} height={20} />
         </button>
