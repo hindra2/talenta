@@ -44,14 +44,14 @@ export default function Home() {
             </span>
             <span className="mx-1 text-subheadingBlack"> | </span>
             <span className="text-subheadingBlack">
-              Grade 8A &gt; [Student&apos;s Name]
+              Grade 8A &gt; Ann Chovey{" "}
             </span>
           </div>
         </div>
       </div>
       <hr className="self-start ml-[150px] border-t border-gray-200 my-[20px] w-[70%]" />
       <div className="self-start ml-[150px]">
-        <span className="font-bold text-4xl text-headingRed">Jane Doe</span>
+        <span className="font-bold text-4xl text-headingRed">Ann Chovey</span>
         <span className="font-medium text-3xl text-headingRed">
           &apos;s Profile
         </span>
@@ -113,8 +113,14 @@ export default function Home() {
               <span className="font-semibold text-xl text-headingBlack">
                 Administrator
               </span>
-              <Administrator />
-              <Administrator />
+              <Administrator
+                teacherName="Jennifer Johnson"
+                schoolName="Decelis High School"
+              />
+              <Administrator
+                teacherName="Jessica Huang"
+                schoolName="Fate Elementary School"
+              />
               <div className="bottom-0 flex justify-end p-5 mt-[460px]">
                 <button className="flex bg-headingRed w-[335px] h-[50px] rounded-full items-center justify-center">
                   <span className="text-xl text-white">Download as PDF</span>
