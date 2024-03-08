@@ -1,6 +1,7 @@
 import Student_Card from "@/Components/student-card";
 import Student_Update from "@/Components/student-updates";
 import { Space_Mono } from "next/font/google";
+import ClassDetails from "@/Components/dashboard-teachers/classDetails";
 
 export default function Home() {
   return (
@@ -72,43 +73,10 @@ export default function Home() {
 
         <div className="col-span-3">
           {/* Searchbox div */}
-          <div className="m-[60px] mt-[20px] h-[200px] bg-white rounded-3xl p-5 shadow-lg">
-            <div className="flex justify-center font-bold">
-              <span>Class Details</span>
-            </div>
-
-            <div className="mt-2 flex justify-between items-center">
-              <span className="mr-4">Teacher:</span>
-              <input
-                className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline"
-                placeholder=" "
-              />
-            </div>
-
-            <div className="mt-2 flex justify-between items-center">
-              <span className="mr-4">Administrator:</span>
-              <input
-                className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline"
-                placeholder=" "
-              />
-            </div>
-
-            <div className="mt-2 flex justify-between items-center">
-              <span className="mr-4">Class Size:</span>
-              <input
-                className="shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:shadow-outline"
-                placeholder=" "
-              />
-            </div>
-          </div>
+          <ClassDetails />
 
           {/* Update div */}
-          <div className="flex justify-center">
-            <span>Student Updates</span>
-          </div>
-          <div className="grid grid-cols m-[60px] mt-[20px] h-[500px] bg-teacherContainer rounded-3xl p-5 shadow-inner">
-            <Student_Update /> {}
-          </div>
+          <Student_Update /> {}
         </div>
       </div>
     </main>

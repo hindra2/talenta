@@ -1,6 +1,30 @@
 import Image from "next/image";
+import Popup from "@/Components/dashboard-teachers/popup-text-input";
+import React, { useState } from "react";
 
-const Teacher_Notes_Data = () => {
+interface TeacherNotesProps {
+  title: string;
+  uploadDate: string;
+  teacherName: string;
+  studentName: string;
+}
+
+const Teacher_Notes_Data: React.FC<TeacherNotesProps> = ({
+  title,
+  uploadDate,
+  teacherName,
+  studentName
+}) => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
+
   return (
     <div className="w-full flex justify-center">
       {" "}
@@ -9,31 +33,31 @@ const Teacher_Notes_Data = () => {
         {" "}
         {/* Set a max-width */}
         <span className="text-lg font-semibold text-headingBlack">
-          Notes Title
+          {title}
         </span>
         <div className="flex justify-between items-center">
           <div className="overflow-hidden">
             <span className="text-l font-semibold text-subheadingBlack">
-              Upload Date :
+              Upload Date: 
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              _ / _ / __ |
+              {uploadDate} |
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
-              Teacher:
+              Teacher: 
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              Teacher&apos;s Name |
+              {teacherName} |
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
-              Student:
+              Student: 
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              Student&apos;s Name |
+              {studentName}
             </span>
           </div>
           <div>
-            <button className="mr-1">
+            <button className="mr-1" onClick={openPopup}>
               <div className="w-[30px] h-[30px] bg-headingRed flex items-center justify-center rounded-full">
                 <Image 
                   src="edit.png"
@@ -43,7 +67,8 @@ const Teacher_Notes_Data = () => {
                 />
               </div>
             </button>
-            <button>
+            <Popup isOpen={isPopupOpen} onClose={closePopup} />
+            <button >
               <div className="w-[30px] h-[30px] bg-headingRed flex items-center justify-center rounded-full">
                 <Image 
                   src="trash-can.png"
@@ -54,12 +79,6 @@ const Teacher_Notes_Data = () => {
               </div>
             </button>
           </div>
-        </div>
-        <div className="mt-3 text-l text-captionBlack overflow-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
         </div>
       </div>
     </div>
