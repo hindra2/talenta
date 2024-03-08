@@ -1,8 +1,22 @@
-import Image from "next/image";
-import Popup from "@/Components/dashboard-teachers/popup-text-input";
 import React, { useState } from "react";
+import Popup from "@/Components/dashboard-student/academics-popup";
 
-const Academics_Data: React.FC = () => {
+// Define props type for better type checking (optional but recommended)
+type AcademicsDataProps = {
+  grade: string;
+  semester: string;
+  uploadDate: string;
+  teacherName: string;
+  studentName: string;
+};
+
+const Academics_Data: React.FC<AcademicsDataProps> = ({
+  grade,
+  semester,
+  uploadDate,
+  teacherName,
+  studentName,
+}) => {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   const openPopup = () => {
@@ -17,7 +31,7 @@ const Academics_Data: React.FC = () => {
     <div className="w-full">
       <div className="w-full h-[85px] bg-white rounded-2xl px-6 py-4 shadow-xl mb-5">
         <span className="text-lg font-semibold text-headingBlack">
-          Grade _ | Semester _
+          Grade {grade} | Semester {semester}
         </span>
         <div className="flex justify-between items-center">
           <div>
@@ -25,31 +39,24 @@ const Academics_Data: React.FC = () => {
               Upload Date :{" "}
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              _ / _ / __ |{" "}
+              {uploadDate} |{" "}
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
               Teacher:{" "}
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              Teacher&apos;s Name |{" "}
+              {teacherName} |{" "}
             </span>
             <span className="text-l font-semibold text-subheadingBlack">
               Student:{" "}
             </span>
             <span className="text-l font-medium text-subheadingBlack">
-              Student&apos;s Name |{" "}
+              {studentName}{" "}
             </span>
           </div>
-
-          {/* Popup */}
           <button onClick={openPopup}>
-            <div className="w-[30px] h-[30px] bg-headingRed flex items-center justify-center rounded-full">
-              <Image 
-                src="edit.png"
-                width={15}
-                height={15}
-                alt="edit"
-              />
+            <div className="w-[85px] h-[30px] bg-headingRed flex items-center justify-center rounded-3xl">
+              <span className="text-white font-semibold">Open</span>
             </div>
           </button>
           <Popup isOpen={isPopupOpen} onClose={closePopup} />
