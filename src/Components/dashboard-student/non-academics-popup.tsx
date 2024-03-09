@@ -19,26 +19,101 @@ const Popup: React.FC<PropOpen> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center">
-      <div className="bg-white p-8 w-[45%] h-[50%] text-center rounded-3xl relative items-center justify-center">
+      <div className="bg-white p-8 w-[850px] h-[700px] text-center rounded-3xl relative items-center justify-center">
         <div className="flex">
           <button className="absolute top-0 right-0 p-6" onClick={onClose}>
             <Image src="/close.png" alt="" width={20} height={20} />
           </button>
         </div>
-
-        <div className="relative flex w-full min-w-[200px] mt-[25px]">
-          <textarea
-            className="peer h-full min-h-[100px] w-full resize-none rounded-[7px] border-1 border-gray-900 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-gray-900 focus:border-2 focus:border-gray-900 focus:outline-0 disabled:resize-none disabled:border-0 disabled:bg-blue-gray-50"
-            placeholder=" "
-          />
-          <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t-2 before:border-l-2 before:border-gray-900 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t-2 after:border-r-2 after:border-gray-900 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-gray-900 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-            Title
-          </label>
+        <div className="flex flex-col">
+          <div className="flex items-center space-x-1">
+            <span className="text-headingBlack">Field</span>
+            <span className="text-headingRed">*</span>{" "}
+          </div>
+          <div className="w-[200px] h-[40px] flex items-center justify-center ml-[10px]">
+            <select className="block rounded-lg border-2 border-gray-300 text-subheadingBlack px-[10px] py-[5px]">
+              <option selected>Skills and Competencies</option>
+              <option>Awards and Recognition</option>
+              <option>Experience</option>
+            </select>
+          </div>
         </div>
-
-        <div className="w-[85px] h-[30px] bg-headingRed flex items-center justify-center rounded-3xl absolute bottom-0 right-0 m-10">
-          <span className="text-white font-semibold">Upload</span>
+        <hr className="self-start border-t border-gray-300 my-[10px] w-[95%]" />
+        <div className="flex flex-col">
+          <div className="flex items-center space-x-1">
+            <span className="text-headingBlack">Title</span>
+            <span className="text-headingRed">*</span>{" "}
+          </div>
+          <div className="w-[95%] h-[40px] flex items-center justify-center">
+            <input
+              type="text"
+              className="w-full h-full rounded-lg border-2 border-gray-300 text-subheadingBlack pl-2"
+              placeholder="Enter title here"
+            />
+          </div>
         </div>
+        <div className="flex flex-col mt-[5px]">
+          <div className="flex items-center space-x-1">
+            <span className="text-headingBlack">Issuer</span>
+            <span className="text-headingRed">*</span>{" "}
+          </div>
+          <div className="w-[95%] h-[40px] flex items-center justify-center">
+            <input
+              type="text"
+              className="w-full h-full rounded-lg border-2 border-gray-300 text-subheadingBlack pl-2"
+              placeholder="Enter issuer here"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mt-[5px]">
+          <div className="flex items-center space-x-1">
+            <span className="text-headingBlack">Issue Date</span>
+            <span className="text-headingRed">*</span>{" "}
+          </div>
+          <div className="w-[20%] h-[40px] flex items-center justify-center">
+            <input
+              type="date"
+              className="w-full h-full rounded-lg border-2 border-gray-300 text-subheadingBlack pl-2"
+              placeholder="Select a date"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mt-[5px]">
+          <div className="flex items-center space-x-1">
+            <span className="text-headingBlack">Description</span>
+            <span className="text-headingRed">*</span>{" "}
+          </div>
+          <div className="w-[95%] h-[40px] flex items-center justify-center mt-[65px]">
+            <textarea
+              rows={6}
+              className="w-full rounded-lg border-2 border-gray-300 text-subheadingBlack pl-2 py-2"
+              placeholder="Enter description here"
+            ></textarea>
+          </div>
+        </div>
+        <div className="flex flex-col mt-[80px] text-left">
+          <div className="flex items-center space-x-1">
+            <span className="text-headingBlack">Documentation & Evidence</span>
+            <span className="text-headingRed">*</span>{" "}
+          </div>
+          <span className="text-captionBlack text-sm">
+            Include supportive media, such as related evidence to validate and
+            showcase your honors and awards.
+          </span>
+          <button>
+            <div className="w-[125px] h-[30px] mt-[10px] bg-gray-300 flex items-center justify-center rounded-lg">
+              <Image src="/upload.png" alt="upload" width={15} height={15} />
+              <span className="text-headingBlack text-sm ml-[10px]">
+                Upload File
+              </span>
+            </div>
+          </button>
+        </div>
+        <button>
+          <div className="w-[85px] h-[30px] bg-headingRed flex items-center justify-center rounded-3xl absolute bottom-0 right-0 m-10">
+            <span className="text-white font-semibold">Upload</span>
+          </div>
+        </button>
       </div>
     </div>
   );

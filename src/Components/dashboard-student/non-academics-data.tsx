@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className="w-full">
       {/* Skills and Competencies */}
-      <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-xl mb-5 h-[250px]">
+      <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-xl mb-5 h-[230px]">
         <div>
           <span className="text-lg font-semibold text-headingBlack">
             Skills and Competencies
