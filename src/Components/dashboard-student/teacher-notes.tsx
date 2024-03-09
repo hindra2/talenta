@@ -22,7 +22,7 @@ const Teacher_Notes = () => {
         </div>
         <div className="flex-1 mt-[1000px]">
           <div className="font-bold text-4xl text-headingBlack">
-            Placeholder to allow scrolling
+            {/* Placeholder to allow scrolling */}
           </div>
         </div>
       </div>

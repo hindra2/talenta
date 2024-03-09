@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className="flex-grow">
           <div className="flex justify-center">
-            <div className="flex h-full w-[60%] ml-[-70px]">
+            <div className="flex h-[80vh] w-[60%] ml-[-70px]">
               {renderComponent()}
             </div>
             <div className="ml-[30px]">
@@ -119,7 +119,7 @@ export default function Home() {
                 teacherName="Jessica Huang"
                 schoolName="Fate Elementary School"
               />
-              <div className="bottom-10 flex justify-end p-5">
+              <div className="bottom-0 flex justify-end p-5 mt-[430px]">
                 <button className="flex bg-headingRed w-[335px] h-[50px] rounded-full items-center justify-center">
                   <span className="text-xl text-white">Download as PDF</span>
                 </button>
