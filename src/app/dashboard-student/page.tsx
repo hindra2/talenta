@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Popup from "@/Components/dashboard-student/academics-popup";
 
 // custom components
 import Personal_Data from "@/Components/dashboard-student/personal-data";
@@ -27,6 +28,16 @@ export default function Home() {
       default:
         return <Personal_Data />;
     }
+  };
+
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
   };
 
   return (
@@ -120,9 +131,13 @@ export default function Home() {
                 schoolName="Fate Elementary School"
               />
               <div className="bottom-0 flex justify-end p-5 mt-[430px]">
-                <button className="flex bg-headingRed w-[335px] h-[50px] rounded-full items-center justify-center">
+                <button
+                  className="flex bg-headingRed w-[335px] h-[50px] rounded-full items-center justify-center"
+                  onClick={openPopup}
+                >
                   <span className="text-xl text-white">Download as PDF</span>
                 </button>
+                <Popup isOpen={isPopupOpen} onClose={closePopup} />
               </div>
             </div>
           </div>
