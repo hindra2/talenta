@@ -143,19 +143,19 @@ const Skills = () => {
         </div>
       </div>
       {/* Experience */}
-      <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-xl mb-5 h-[250px]">
+      <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-xl mb-5 h-[200px]">
         <div>
           <span className="text-lg font-semibold text-headingBlack">
             Experience
           </span>
           <div className="w-full h-[50px] ml-[25px]">
             <div className="">
-              <div>
+              <div className="mb-[-7px]">
                 <span className="text-l text-headingBlack font-semibold">
                   Project Leader
                 </span>
               </div>
-              <div>
+              <div className="mb-[-7px]">
                 <span className="text-l text-captionBlack">
                   Social Project &quot;Green Campus Initiative&quot; | Sept 2022
                   - Jan 2023 2023
@@ -164,28 +164,26 @@ const Skills = () => {
               <div>
                 <span className="text-l text-headingBlack">
                   Led a team of 10 students in organizing and implementing a
-                  school-wide initiative to promote environmental
-                  sustainability.
+                  school-wide initiative to promote sustainability.
                 </span>
               </div>
             </div>
             <hr className="self-start border-t border-gray-300 my-[10px] w-[90%]" />
             <div className="">
-              <div>
+              <div className="mb-[-7px]">
                 <span className="text-l text-headingBlack font-semibold">
                   Teamwork
                 </span>
               </div>
-              <div>
-                <span className="text-l text-headingBlack">
-                  Led a team of 10 students in organizing and implementing a
-                  school-wide initiative to promote environmental
-                  sustainability.
+              <div className="mb-[-7px]">
+                <span className="text-l text-captionBlack">
+                  Environmental Studies Program | Mar 2023 - June 2023
                 </span>
               </div>
               <div>
                 <span className="text-l text-headingBlack">
-                  - Played doubles in the school tennis team.
+                  Assisted in conducting a research project focused on the
+                  impact of local biodiversity on ecosystem health.
                 </span>
               </div>
             </div>
