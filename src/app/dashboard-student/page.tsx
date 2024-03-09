@@ -104,11 +104,9 @@ export default function Home() {
 
         <div className="flex-grow">
           <div className="flex justify-center">
-            {/* Profile Container Section */}
             <div className="flex h-[80vh] w-[60%] ml-[-70px]">
               {renderComponent()}
             </div>
-            {/* Administrator Section & Download as PDF button*/}
             <div className="ml-[30px]">
               <span className="font-semibold text-xl text-headingBlack">
                 Administrator
