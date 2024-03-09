@@ -20,7 +20,7 @@ const Teacher_Notes = () => {
             noteContent="Looking ahead, I plan to introduce more collaborative projects and discussion-based activities, aiming to enrich our classroom dynamics and encourage a more hands-on approach to learning. This method will not only help in cementing the concepts we cover but also in developing soft skills such as teamwork, communication, and problem-solving. I encourage students to take advantage of office hours for one-on-one support and to discuss any challenges they're facing. Engagement outside the classroom is just as crucial for academic success as participation inside. Let's continue to work together, embracing challenges as opportunities for growth and learning. With a focus on continuous improvement and open communication, I am confident we will achieve great things in the remainder of the semester."
           />
         </div>
-        <div className="mt-auto">
+        <div className="flex-1 mt-[1000px]">
           <div className="font-bold text-4xl text-headingBlack">
             Placeholder to allow scrolling
           </div>

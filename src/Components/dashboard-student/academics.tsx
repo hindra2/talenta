@@ -20,9 +20,9 @@ const Academics = () => {
             studentName="Ann Chovey"
           />
         </div>
-        <div className="mt-auto">
+        <div className="mt-[2000px]">
           <div className="font-bold text-4xl text-headingBlack">
-            Placeholder to allow scrolling
+            {/* Placeholder to allow scrolling */}
           </div>
         </div>
       </div>
