@@ -1,6 +1,7 @@
 import Header from "@/Components/logo";
 import Image from "next/image";
 import Link from "next/link";
+import loginFields from "next/forms";
 
 export default function Home() {
   return (
@@ -36,7 +37,9 @@ export default function Home() {
                 EMAIL
               </span>
               <br></br>
-              <input className="mt-[25px] ml-[-30px] h-[20px] w-[300px]"></input>
+              <input className="mt-[25px] ml-[-30px] h-[20px] w-[300px]">
+
+              </input>
             </div>
             <div className="flex h-[50px] w-[400px] mt-[15px] bg-white shadow-lg rounded-2xl ml-[100px]">
               <div className="ml-[9px] mt-[15px]">
@@ -63,8 +66,8 @@ export default function Home() {
             </div>
             <div className="flex h-[35px] w-[110px] mt-[25px] bg-red-400 shadow-lg rounded-3xl ml-[390px]">
               <Link href="dashboard-student">
-                <button className="ml-[33.5px] mt-[2px] font-bold text-sm text-white">
-                  <center>LOGIN</center>
+                <button className="ml-[34px] mt-[8px] font-bold text-sm text-white text-center">
+                  LOGIN
                 </button>
               </Link>
             </div>
@@ -81,7 +84,7 @@ export default function Home() {
             </center>
           </div>
           <div className="ml-[245px] mt-[20px] w-[175px] h-[175px]">
-            <Header /> {}
+            <Header /> { }
           </div>
         </div>
       </div>

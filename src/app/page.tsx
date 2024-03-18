@@ -40,12 +40,12 @@ export default function Home() {
           </span>
           <div className="w-[500px]">
             <Link href="login-page">
-              <button className="bg-red-400 rounded-3xl h-[40px] w-[145px] mt-[0px] items-center text-white">
+              <button className="bg-red-400 rounded-3xl h-[40px] w-[145px] mt-[0px] text-center font-bold text-white">
                 Login
               </button>
             </Link>
             <Link href="dashboard-teachers">
-              <button className="bg-white rounded-3xl h-[40px] w-[145px] mt-[10px] ml-[25px] outline outline-2 outline-offset-0 text-gray-400">
+              <button className="bg-white rounded-3xl h-[40px] w-[145px] mt-[10px] ml-[25px] font-bold outline outline-2 outline-offset-0 text-gray-400">
                 How It Works
               </button>
             </Link>
