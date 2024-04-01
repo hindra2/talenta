@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Popup from "@/Components/dashboard-student/academics-popup";
+import Popup from "@/Components/dashboard-student/download-popup";
 
 // custom components
 import Personal_Data from "@/Components/dashboard-student/personal-data";

@@ -27,7 +27,7 @@ const Popup: React.FC<PropOpen> = ({ isOpen, onClose }) => {
         </button>
         <object
           className="w-[95%] h-[95%] mx-auto"
-          data="/dummy_transcript.pdf"
+          data="/transcript_placeholder.pdf"
           type="application/pdf"
           style={{ display: "block" }}
         >
