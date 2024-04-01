@@ -10,6 +10,7 @@ import Teacher_Notes from "@/Components/dashboard-student/teacher-notes";
 import Academics from "@/Components/dashboard-student/academics";
 import Non_Academics from "@/Components/dashboard-student/non-academics";
 import Administrator from "@/Components/dashboard-student/administrator";
+import Empty from "@/Components/dashboard-student/empty-data";
 
 export default function Home() {
   const [activeComponent, setActiveComponent] = useState("personalData");
@@ -25,6 +26,10 @@ export default function Home() {
         return <Non_Academics />;
       case "teachersNotes":
         return <Teacher_Notes />;
+      case "learningStyle":
+        return <Empty />;
+      case "medpsyc":
+        return <Empty />;
       default:
         return <Personal_Data />;
     }
@@ -100,6 +105,26 @@ export default function Home() {
             onClick={() => setActiveComponent("nonAcademics")}
           >
             Non-Academics
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl text-left p-2 ${
+              activeComponent === "learningStyle"
+                ? "text-headingRed border-l-2 border-headingRed -ml-2 pl-4"
+                : "text-subheadingBlack"
+            }`}
+            onClick={() => setActiveComponent("learningStyle")}
+          >
+            Learning Style
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl text-left p-2 ${
+              activeComponent === "medpsyc"
+                ? "text-headingRed border-l-2 border-headingRed -ml-2 pl-4"
+                : "text-subheadingBlack"
+            }`}
+            onClick={() => setActiveComponent("medpsyc")}
+          >
+            Medical & Psychological History
           </button>
           <button
             className={`profile-button mb-6 text-xl text-left p-2 ${
