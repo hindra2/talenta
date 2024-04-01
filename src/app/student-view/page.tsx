@@ -10,6 +10,7 @@ import Academics from "@/Components/dashboard-teachers/academics";
 import Non_Academics from "@/Components/dashboard-teachers/non-academics";
 import Student_Update from "@/Components/student-updates";
 import ClassDetails from "@/Components/dashboard-teachers/classDetails";
+import Empty from "@/Components/dashboard-student/empty-data";
 
 export default function Home() {
   const [activeComponent, setActiveComponent] = useState("personalData");
@@ -25,6 +26,10 @@ export default function Home() {
         return <Non_Academics />;
       case "teachersNotes":
         return <Teacher_Notes />;
+      case "learningStyle":
+        return <Empty />;
+      case "medpsyc":
+        return <Empty />;
       default:
         return <Personal_Data />;
     }
@@ -93,6 +98,26 @@ export default function Home() {
           </button>
           <button
             className={`profile-button mb-6 text-xl text-left p-2 ${
+              activeComponent === "learningStyle"
+                ? "text-headingRed border-l-2 border-headingRed -ml-2 pl-4"
+                : "text-subheadingBlack"
+            }`}
+            onClick={() => setActiveComponent("learningStyle")}
+          >
+            Learning Style
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl text-left p-2 ${
+              activeComponent === "medpsyc"
+                ? "text-headingRed border-l-2 border-headingRed -ml-2 pl-4"
+                : "text-subheadingBlack"
+            }`}
+            onClick={() => setActiveComponent("medpsyc")}
+          >
+            Medical & Psychological History
+          </button>
+          <button
+            className={`profile-button mb-6 text-xl text-left p-2 ${
               activeComponent === "teachersNotes"
                 ? "text-headingRed border-l-2 border-headingRed -ml-2 pl-4"
                 : "text-subheadingBlack"
@@ -112,7 +137,6 @@ export default function Home() {
             <div className="col-span-3">
               {/* Searchbox div */}
               <ClassDetails />
-
               {/* Update div */}
               <Student_Update /> {}
             </div>
