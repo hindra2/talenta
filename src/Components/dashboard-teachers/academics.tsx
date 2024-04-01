@@ -20,7 +20,7 @@ const Academics = () => {
             studentName="Ann Chovey"
           />
         </div>
-        <button className="w-[150px] h-[40px] bg-headingRed flex items-center justify-center rounded-xl absolute top-[130px] right-[505px] m-10 text-white font-semibold font-s2xl">
+        <button className="w-[150px] h-[40px] bg-headingRed flex items-center justify-center rounded-xl absolute top-[130px] right-[505px] m-10 text-white font-semibold font-s2xl z-[-50px]">
           Upload Report
         </button>
       </div>
