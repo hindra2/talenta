@@ -68,7 +68,7 @@ const Teacher_Notes_Data: React.FC<TeacherNotesProps> = ({
               </div>
             </button>
             <Popup isOpen={isPopupOpen} onClose={closePopup} />
-            <button >
+            <button>
               <div className="w-[30px] h-[30px] bg-headingRed flex items-center justify-center rounded-full">
                 <Image 
                   src="trash-can.png"
