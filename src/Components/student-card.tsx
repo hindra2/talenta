@@ -17,9 +17,9 @@ const Student_Card = () => {
     <div className="flex flex-col h-[190px] w-[160px] bg-white rounded-xl shadow-lg p-2 items-center">
       <Link href="student-view">
         <button>
-          <div className="flex flex-col bg-color-transparent rounded-full p-2">
+          <div className="flex flex-col bg-grey-100 rounded-full p-2">
             <Image
-              src={`/student-pics/${num}.jpg`}
+              src={`/student-pics/${num}.png`}
               alt="Student Placeholder"
               width={100}
               height={100}
