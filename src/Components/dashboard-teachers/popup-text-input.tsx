@@ -50,7 +50,7 @@ const Popup: React.FC<PropOpen> = ({ isOpen, onClose }) => {
                     </label>
                 </div>
                 <div className="w-[85px] h-[30px] bg-headingRed flex items-center justify-center rounded-3xl absolute bottom-0 right-0 m-10">
-                    <span className="text-white font-semibold">Upload</span>
+                    <button className="text-white font-semibold">Upload</button>
                 </div>
             </div>
       </div>
