@@ -1,3 +1,5 @@
+"use client";
+
 import Student_Card from "@/Components/student-card";
 import Student_Update from "@/Components/student-updates";
 import { Space_Mono } from "next/font/google";
