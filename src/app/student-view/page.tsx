@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <hr className="self-start ml-[150px] border-t border-gray-200 my-[20px] w-[70%]" />
       <div className="self-start ml-[150px]">
-        <span className="font-bold text-4xl text-headingRed">Jane Doe</span>
+        <span className="font-bold text-4xl text-headingRed">Ann Chovey</span>
         <span className="font-medium text-3xl text-headingRed">
           &apos;s Profile | Teacher&apos;s View
         </span>
