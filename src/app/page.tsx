@@ -3,7 +3,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden h-screen">
+    <main className="overflow-hidden h-screen relative">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/homebg.png"
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
+
       <div className="overflow-hidden h-screen">
         <div className="flex flex-col float-end h-[60px] w-[900px] mt-[50px] bg-red-400 rounded-l-full">
           <div className="grid grid-flow-col auto-cols-auto ml-[75px]">
@@ -25,7 +35,7 @@ export default function Home() {
           </div>
         </div>
         <br></br>
-        <div className="flex min-h-screen flex-col mt-[200px] ml-[175px] ">
+        <div className="flex min-h-screen flex-col mt-[200px] ml-[175px]">
           <span className="text-3xl text-red-500">Welcome to</span>
           <div className="ml-[-14px] mt-[0px]">
             <Image
@@ -35,7 +45,7 @@ export default function Home() {
               height={400}
             />
           </div>
-          <span className=" text-subheadingBlack mt-[30px] text-sxl">
+          <span className="text-subheadingBlack mt-[30px] text-sxl">
             Are you a user? Access your account to explore & engage!
           </span>
           <div className="w-[500px]">
